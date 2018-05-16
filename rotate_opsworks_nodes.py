@@ -44,11 +44,11 @@ def create_instances(instance_dict):
     base_instance_dict = {
         'AmiId': 'ami-3e346142',
         'InstanceType': 'm4.10xlarge',
-        'LayerIds': ['95f13bcf-514c-4e61-8d52-c0c75ef25f6b'],
+        'LayerIds': ['95f13bcf'],
         'Os': 'Custom',
-        'SshKeyName': 'srikrishnag',
-        'StackId': '3b70da51-4c0b-442e-bcc4-d0f9a991608b',
-        'SubnetId': 'subnet-8b504efc'
+        'SshKeyName': 'gsk',
+        'StackId': 'd0f9a991608b',
+        'SubnetId': 'abc123'
     }
     new_instances = []
     for count in range(len(get_opsworks_instance_ids(stackid))):
