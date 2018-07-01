@@ -17,7 +17,7 @@ def get_stack_id(stack_name):
     for d_stack in stacks['Stacks']:
         if d_stack['Name'] == stack_name:
             # print "matching stacks : " + d_stack['Name']
-            return d_stack['StackId']
+            return d_stack['StackId'P]
 
 
 def get_layer_id(stackid):
@@ -77,7 +77,7 @@ def stop_old_instances(instance_id):
     for instance_id in get_opsworks_instance_ids(stackid):
         response = client.stop_instance(
             InstanceId='string',
-            Force=False
+            Force=False,
         )
         return response
 
